@@ -38,3 +38,4 @@ hero-contact.png https://images.squarespace-cdn.com/content/v1/68896d83838ce327c
 blog-post2.png https://images.squarespace-cdn.com/content/v1/68896d83838ce327c207d94d/1782934057704-BPTUVKPZMPU7OW83X4ZR/Post2_Header_Custom.png?format=1500w
 blog-post1.png https://images.squarespace-cdn.com/content/v1/68896d83838ce327c207d94d/1782934146639-GVFN3EHGW5HZBZXYD33Y/Post1_Header_Custom.png?format=1500w
 favicon.ico https://images.squarespace-cdn.com/content/v1/68896d83838ce327c207d94d/2f0ad55e-f441-4b70-9cd8-1262f0c46a1f/favicon.ico?format=100w
+faq-hero.jpg https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=2500&q=80

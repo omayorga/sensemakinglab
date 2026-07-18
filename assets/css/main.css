@@ -266,3 +266,23 @@ p { margin: 1rem 0; }
 }
 .photo-frame--left::after { right: auto; left: -14px; }
 .photo-frame--left::before { left: auto; right: 0; transform: translate(14px, -14px); }
+
+/* === Feedback fixes (Paul, 7/17) === */
+/* 1. Hero readability: gradient + text shadow */
+.hero:not(.hero--short)::before {
+  content: ''; position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(90deg, rgba(0,40,80,.55) 0%, rgba(0,40,80,.30) 55%, rgba(0,40,80,.10) 100%);
+}
+.hero .hero-circle { z-index: 1; }
+.hero h1, .hero p { text-shadow: 0 2px 14px rgba(0,25,55,.55); }
+
+/* 2. Partners collage: stack cleanly on phones */
+@media (max-width: 680px) {
+  .collage { padding-bottom: 0; }
+  .collage .photo-main { width: 100%; border-radius: 16px; }
+  .collage .photo-overlap {
+    position: static; width: 100%; border: none;
+    border-radius: 16px; margin-top: 1rem;
+  }
+  .collage .shape { display: none; }
+}
