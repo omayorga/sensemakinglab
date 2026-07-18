@@ -229,3 +229,40 @@ p { margin: 1rem 0; }
   .hero { min-height: 70vh; }
   .hero .hero-circle { left: -60vw; width: 150vw; height: 150vw; }
 }
+
+/* === Accuracy fixes (v2) === */
+/* Blue headings on light sections, per original theme */
+.section--light h2, .section--white h2, .section--hex h2 { color: var(--blue); }
+
+/* Light hexagon-texture section (Squarespace bright-inverse on bg25) */
+.section--hex {
+  background: #fff url('../images/bg-blue-texture.jpg') center / cover no-repeat;
+  color: #000;
+}
+
+/* Contact Us nav button */
+.site-nav .nav-btn {
+  background: var(--blue); color: #fff;
+  border-radius: 8px; padding: 14px 22px;
+}
+.site-nav .nav-btn:hover, .site-nav .nav-btn.active { text-decoration: none; opacity: .9; }
+
+/* Centered short heroes */
+.hero--short .hero-content { text-align: center; }
+
+/* Photo frame: dots pattern + blue rounded accent, as on original Services */
+.photo-frame { position: relative; padding: 26px; }
+.photo-frame img { position: relative; z-index: 2; border-radius: 10px; width: 100%; }
+.photo-frame::before {
+  content: ''; position: absolute; z-index: 1;
+  top: 0; left: 0; width: 60%; height: 55%;
+  background: url('../images/dot-shape.png') repeat left top / 220px;
+  transform: translate(-14px, -14px);
+}
+.photo-frame::after {
+  content: ''; position: absolute; z-index: 0;
+  top: 14%; right: -14px; width: 46%; height: 80%;
+  background: var(--blue); border-radius: 18px;
+}
+.photo-frame--left::after { right: auto; left: -14px; }
+.photo-frame--left::before { left: auto; right: 0; transform: translate(14px, -14px); }
