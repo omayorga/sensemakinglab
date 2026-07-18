@@ -37,3 +37,4 @@ hero-generic.png https://images.squarespace-cdn.com/content/v1/5ec321c2af33de487
 hero-contact.png https://images.squarespace-cdn.com/content/v1/68896d83838ce327c207d94d/1753836937472-TAS8N0HZH2O3MIMX0RWS/iStock-1130938108_0.png?format=2500w
 blog-post2.png https://images.squarespace-cdn.com/content/v1/68896d83838ce327c207d94d/1782934057704-BPTUVKPZMPU7OW83X4ZR/Post2_Header_Custom.png?format=1500w
 blog-post1.png https://images.squarespace-cdn.com/content/v1/68896d83838ce327c207d94d/1782934146639-GVFN3EHGW5HZBZXYD33Y/Post1_Header_Custom.png?format=1500w
+favicon.ico https://images.squarespace-cdn.com/content/v1/68896d83838ce327c207d94d/2f0ad55e-f441-4b70-9cd8-1262f0c46a1f/favicon.ico?format=100w
