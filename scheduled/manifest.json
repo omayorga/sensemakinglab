@@ -1,0 +1,126 @@
+{
+  "site": "https://www.sensemakinglab.io",
+  "author": "Oscar J Mayorga",
+  "posts": [
+    {
+      "num": 1,
+      "slug": "how-to-choose-a-program-evaluator",
+      "title": "How to Choose a Program Evaluator",
+      "category": "Evaluation",
+      "date": "2026-07-07",
+      "image": "blog-post1.png",
+      "excerpt": "What a program evaluator does, how internal and external evaluation compare, the six questions to ask before you hire, and the green and red flags that separate a strong fit from an expensive disappointment.",
+      "published": true
+    },
+    {
+      "num": 2,
+      "slug": "what-is-critical-analytics",
+      "title": "What Is Critical Analytics?",
+      "category": "Critical Analytics",
+      "date": "2026-07-14",
+      "image": "blog-post2.png",
+      "excerpt": "Critical analytics is data analysis that asks how a metric was built, what it measures, and who benefits, not just what the numbers say. Here is what that changes.",
+      "published": true
+    },
+    {
+      "num": 3,
+      "slug": "student-retention-strategies-that-work",
+      "title": "Student Retention Strategies That Work",
+      "category": "Education Support",
+      "date": "2026-07-21",
+      "image": "blog-post3.png",
+      "excerpt": "Student retention strategies that move persistence: leading indicators, early-warning systems, wraparound support, and honest measurement that shows the gap.",
+      "published": false
+    },
+    {
+      "num": 4,
+      "slug": "enrollment-forecasting-101",
+      "title": "Enrollment Forecasting 101",
+      "category": "Education Support",
+      "date": "2026-07-28",
+      "image": "blog-post4.png",
+      "excerpt": "Enrollment forecasting explained plainly: what it is, the main methods, the data you need, why to disaggregate, and the pitfalls that sink a projection.",
+      "published": false
+    },
+    {
+      "num": 5,
+      "slug": "internal-vs-external-evaluators",
+      "title": "Internal vs. External Evaluators: How to Decide",
+      "category": "Evaluation",
+      "date": "2026-08-04",
+      "image": "blog-post5.png",
+      "excerpt": "Internal vs. external evaluator: the honest trade-offs on cost, independence, capacity, and credibility, plus when to choose each and the hybrid middle path.",
+      "published": false
+    },
+    {
+      "num": 6,
+      "slug": "outcomes-vs-outputs",
+      "title": "Outcomes vs. Outputs: Measuring Nonprofit Impact",
+      "category": "Evaluation",
+      "date": "2026-08-11",
+      "image": "blog-post6.png",
+      "excerpt": "Outcomes vs outputs: outputs count activity, outcomes measure change. Learn the logic-model chain, why funders confuse them, and how to measure impact honestly.",
+      "published": false
+    },
+    {
+      "num": 7,
+      "slug": "institutional-research",
+      "title": "What Institutional Research Actually Does",
+      "category": "Education Support",
+      "date": "2026-08-18",
+      "image": "blog-post7.png",
+      "excerpt": "Institutional research is the campus function behind reporting, accreditation, and student-success analytics. Here is what IR actually does and why it matters.",
+      "published": false
+    },
+    {
+      "num": 8,
+      "slug": "early-warning-system-retention",
+      "title": "Building an Early-Warning System for Retention",
+      "category": "Education Support",
+      "date": "2026-08-25",
+      "image": "blog-post8.png",
+      "excerpt": "How to build an early-warning system for student retention: choose leading indicators, set thresholds, route every flag to a named owner, and close the loop.",
+      "published": false
+    },
+    {
+      "num": 9,
+      "slug": "culturally-responsive-evaluation",
+      "title": "Culturally Responsive Evaluation, Explained",
+      "category": "Evaluation",
+      "date": "2026-09-01",
+      "image": "blog-post9.png",
+      "excerpt": "Culturally responsive evaluation treats context, culture, and stakeholder voice as central to validity, not decoration. Here is what that means and why it matters.",
+      "published": false
+    },
+    {
+      "num": 10,
+      "slug": "evaluation-section-grant-proposal",
+      "title": "How to Write the Evaluation Section of a Grant",
+      "category": "Evaluation",
+      "date": "2026-09-08",
+      "image": "blog-post10.png",
+      "excerpt": "How to write the evaluation section of a grant proposal: questions tied to a logic model, mixed methods, indicators, timeline, and a real plan to use findings.",
+      "published": false
+    },
+    {
+      "num": 11,
+      "slug": "qualitative-vs-quantitative",
+      "title": "Qualitative vs. Quantitative: Which Method When",
+      "category": "Critical Analytics",
+      "date": "2026-09-15",
+      "image": "blog-post11.png",
+      "excerpt": "Qualitative vs. quantitative research, made practical. What each method answers well, the limits of each, and how to choose the method that fits your decision.",
+      "published": false
+    },
+    {
+      "num": 12,
+      "slug": "what-a-program-evaluation-costs",
+      "title": "What a Program Evaluation Costs",
+      "category": "Evaluation",
+      "date": "2026-09-22",
+      "image": "blog-post12.png",
+      "excerpt": "What a program evaluation costs and why prices vary so widely. The real cost drivers, how to right-size the work, and how to compare quotes fairly.",
+      "published": false
+    }
+  ]
+}
