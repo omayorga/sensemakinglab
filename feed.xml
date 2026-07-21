@@ -1,132 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Building an Early-Warning System for Retention &mdash; Sensemaking Lab</title>
-  <meta name="description" content="How to build an early-warning system for student retention: choose leading indicators, set thresholds, route every flag to a named owner, and close the loop.">
-  <link rel="canonical" href="https://www.sensemakinglab.io/blog/early-warning-system-retention">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../assets/css/main.css">
-  <meta name="google-site-verification" content="GWVqHEuYBaIzS23-tDNE0pbTqPAwlWFUAoXQOhozv4g">
-  <link rel="icon" href="../../assets/images/favicon.ico">
-  <link rel="alternate" type="application/rss+xml" title="Sensemaking Lab Blog" href="../../feed.xml">
-  <meta property="og:site_name" content="Sensemaking Lab">
-  <meta property="og:title" content="Building an Early-Warning System for Retention &mdash; Sensemaking Lab">
-  <meta property="og:description" content="How to build an early-warning system for student retention: choose leading indicators, set thresholds, route every flag to a named owner, and close the loop.">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://www.sensemakinglab.io/blog/early-warning-system-retention">
-  <meta property="og:image" content="https://www.sensemakinglab.io/assets/images/blog-post8.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Building an Early-Warning System for Retention &mdash; Sensemaking Lab">
-  <meta name="twitter:description" content="How to build an early-warning system for student retention: choose leading indicators, set thresholds, route every flag to a named owner, and close the loop.">
-  <script type="application/ld+json">{"@context": "http://schema.org", "@type": "WebSite", "url": "https://www.sensemakinglab.io", "name": "Sensemaking Lab", "image": "https://www.sensemakinglab.io/assets/images/logo.jpg"}</script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Sensemaking Lab", "url": "https://www.sensemakinglab.io", "logo": "https://www.sensemakinglab.io/assets/images/logo.jpg", "image": "https://www.sensemakinglab.io/assets/images/logo.jpg", "description": "Sensemaking Lab helps mission-driven organizations in education, healthcare, and the nonprofit sector turn complex data into clear, actionable insight through program evaluation, problem-solving consulting, critical analytics, and education support for post-secondary institutions.", "email": "hello@sensemakinglab.io", "areaServed": {"@type": "Country", "name": "United States"}, "address": {"@type": "PostalAddress", "streetAddress": "8605 Santa Monica Blvd, PMB #190416", "addressLocality": "West Hollywood", "addressRegion": "CA", "postalCode": "90069", "addressCountry": "US"}, "knowsAbout": ["Program evaluation", "Institutional research", "Enrollment forecasting", "Student retention", "Accreditation reporting", "Survey research", "Mixed-methods research", "Data visualization"], "founder": [{"@type": "Person", "name": "Oscar J. Mayorga", "jobTitle": "Managing Partner", "alumniOf": {"@type": "CollegeOrUniversity", "name": "University of California, Los Angeles"}, "sameAs": "https://www.linkedin.com/in/oscar-j-mayorga/"}, {"@type": "Person", "name": "Paul Martinez", "jobTitle": "Managing Partner", "alumniOf": {"@type": "CollegeOrUniversity", "name": "University of California, Los Angeles"}, "sameAs": "https://www.linkedin.com/in/paul-martinez-36b0a997/"}], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Services", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Evaluation", "description": "Quantitative and qualitative program evaluation guided by American Evaluation Association standards to help organizations understand impact and inform decisions."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Problem-Solving Consulting", "description": "Strategic consulting that helps mission-driven organizations navigate operational and programmatic challenges using an asset-based framework."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Critical Analytics", "description": "Critically-informed data analysis with secure infrastructure (SFTP, Databricks, AWS S3) that turns complex datasets into actionable, equitable insight."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Education Support", "description": "Analytics and strategic support for post-secondary institutions, including data submissions, enrollment forecasting, student retention strategies, accreditation assistance, and custom reporting."}}]}}</script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Building an Early-Warning System for Retention", "datePublished": "2026-08-25", "image": "https://www.sensemakinglab.io/assets/images/blog-post8.png", "url": "https://www.sensemakinglab.io/blog/early-warning-system-retention", "author": {"@type": "Person", "name": "Oscar J. Mayorga"}, "publisher": {"@type": "Organization", "name": "Sensemaking Lab", "logo": {"@type": "ImageObject", "url": "https://www.sensemakinglab.io/assets/images/logo.jpg"}}, "mainEntityOfPage": "https://www.sensemakinglab.io/blog/early-warning-system-retention"}</script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is an early-warning system for student retention?", "acceptedAnswer": {"@type": "Answer", "text": "It is a process that watches a few leading indicators, triggers a defined response when a student crosses a threshold, routes each flag to a named owner with a next step, and tracks whether the outreach worked. The technology matters far less than the follow-through."}}, {"@type": "Question", "name": "Which indicators should an early-warning system track?", "acceptedAnswer": {"@type": "Answer", "text": "A small set that moves before retention does: attendance and early-engagement patterns, first-term grades in gateway courses, and credit momentum. These transfer as a principle from research on the on-track indicator, which found early performance and attendance to be strong predictors."}}, {"@type": "Question", "name": "How is an early-warning system different from surveillance?", "acceptedAnswer": {"@type": "Answer", "text": "Surveillance monitors students; an early-warning system prompts the institution to act. A flag is not a verdict or a permanent label, it is a signal that someone should reach out while a situation is still recoverable."}}, {"@type": "Question", "name": "How do you keep an early-warning system from being biased?", "acceptedAnswer": {"@type": "Answer", "text": "Disaggregate outcomes by student population so an encouraging average does not hide a gap, and interrogate each flag for what it actually measures and whom it tends to flag. A proxy indicator can encode circumstance rather than risk, so test it before you trust it."}}]}</script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "How to build an early-warning system for student retention", "description": "A disciplined process for turning a few leading indicators into timely, human outreach: choose the signals, set thresholds, route every flag to a named owner, intervene on the real cause, and close the loop equitably.", "step": [{"@type": "HowToStep", "name": "Choose a small set of leading indicators", "text": "Watch attendance and early-engagement patterns, first-term grades in gateway courses, and credit momentum. Each moves before retention does and responds to intervention."}, {"@type": "HowToStep", "name": "Set thresholds that trigger a response", "text": "Set thresholds where a signal stops being noise and starts predicting departure, tier them by severity, and tie each threshold to a defined response before turning it on."}, {"@type": "HowToStep", "name": "Route every flag to a named owner with a next step", "text": "Assign a named owner to every flag type, attach a default next step, and set a response window so outreach happens in time."}, {"@type": "HowToStep", "name": "Match the intervention to the real cause", "text": "Use warm handoffs, basic-needs support, and sustained mentoring relationships, because the reasons under an academic signal frequently are not academic."}, {"@type": "HowToStep", "name": "Close the loop and keep the system equitable", "text": "Record the response to every flag, track whether the student re-engaged, disaggregate outcomes by student population, and interrogate the flags themselves for bias."}]}</script>
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="site-logo" href="../../">
-        <img src="../../assets/images/logo.jpg" alt="Sensemaking Lab" width="1500" height="510">
-      </a>
-      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
-      <nav class="site-nav">
-        <a href="../../">Home</a>
-        <a href="../../about/">About</a>
-        <a href="../../services/">Services</a>
-        <a href="../../blog/" class="active">Blog</a>
-        <a href="../../clients/">Clients</a>
-        <a href="../../team/">Team</a>
-        <a href="../../faq/">FAQ</a>
-        <a class="nav-btn" href="../../contact/">Contact Us</a>
-      </nav>
-    </div>
-  </header>
-  <article id="main" class="post">
-    <h1>Building an Early-Warning System for Retention</h1>
-    <div class="post-meta"><a href="../">Education Support</a> &middot; Aug 25 &middot; Written by Oscar J Mayorga</div>
-
-    <p>A student who is about to leave rarely announces it. The signs show up earlier and quieter: a run of missed classes, a first failed gateway course, a term that ends a few credits short. By the time a withdrawal lands in the retention report, the moment to act has usually passed. An early-warning system exists to catch those signals while a conversation can still change the outcome.</p>
-    <p>Plenty of institutions buy a platform and assume the work is done. It is not: a dashboard that no one owns changes nothing. This guide is for student-success and institutional research leaders who want to build the system, not just license it. It covers what an early-warning system is and is not, how to choose a few leading indicators, how to set thresholds and route every flag to a named owner, what the intervention layer looks like, and how to close the loop while keeping the whole thing equitable.</p>
-
-    <h2>What an early-warning system is, and what it is not</h2>
-    <p>An early-warning system is a disciplined process for turning a few leading indicators into timely, human outreach. It watches signals that move before retention does, defines when a signal warrants attention, and makes sure a specific person follows up with a specific next step. That is the whole of it. The technology is the least interesting part.</p>
-    <p>It is worth being just as clear about what it is not. It is not surveillance: the goal is not to monitor students but to notice when a recoverable situation is starting to slip. It is not a deficit dossier that labels students "at risk" and files them away. A flag is not a verdict on a student; it is a prompt for the institution to do its job. Build the system around that distinction and the rest of the design follows. Blur it, and you get a tool that sorts students instead of supporting them.</p>
-
-    <h2>Which leading indicators should you actually watch?</h2>
-    <p>Choose a small set of leading indicators, because retention itself is a lagging outcome that arrives too late to act on. The most durable evidence on which early signals matter comes from the University of Chicago Consortium's research on the "on-track" indicator. Students who finish their first year on-track, defined in that research as earning enough credits and avoiding early course failures, are far more likely to graduate than their off-track peers, and on-track status predicts graduation better than prior achievement and background combined (Allensworth and Easton 2005). The same body of work found course attendance to be a stronger predictor of course failure in the first year than test scores (Allensworth and Easton 2007).</p>
-    <p>That research was conducted in high schools, not colleges, so treat it as a principle rather than a college-specific statistic. The principle transfers cleanly. Three families of signal tend to earn their place: attendance and early-engagement patterns, first-term grades in gateway courses, and credit momentum across the first year. Each moves before retention does, each responds to intervention, and each is something your institution already collects. Resist the urge to track everything: a few predictive signals acted on beat a hundred that sit in a report.</p>
-
-    <h2>How do you set thresholds that trigger a response?</h2>
-    <p>Set thresholds where a signal stops being noise and starts predicting departure, then define exactly what happens when a student crosses one. A threshold is a decision, not a discovery: two absences in the first two weeks, a D or F at the midterm in a gateway course, a first term that closes below full credit momentum. The specific cutoffs belong to your context and your data, and they should be written down, not held in one advisor's head.</p>
-    <p>Two design habits keep thresholds honest. First, tier them, so a mild signal prompts a light touch and a serious one prompts a direct call, rather than treating every flag as an emergency. Second, tie each threshold to a defined response before you turn it on, so that crossing the line starts something rather than simply adding a row to a list. A threshold with no attached action is just a more anxious dashboard.</p>
-
-    <h2>Route every flag to a named owner with a next step</h2>
-    <p>Route each flag to a person, not a report, because a signal that no one owns produces no action. This is where most early-warning systems quietly fail. The data is fine, the thresholds are reasonable, and the flags accumulate in a queue that everyone can see and no one is responsible for. Ownership is the difference between a system and a screensaver.</p>
-    <p>A workable build looks like this:</p>
-    <ol>
-      <li><strong>Assign a named owner to every flag type.</strong> Attendance flags might route to the first-year advising team, gateway-grade flags to the course's success coach, credit-momentum flags to the student's assigned advisor. The rule is that no flag exists without a person whose job it is to respond.</li>
-      <li><strong>Attach a default next step.</strong> Each flag arrives with a recommended action already specified: a check-in email, a scheduled call, a referral with a warm handoff. The owner can use judgment, but the system never leaves the next move undefined.</li>
-      <li><strong>Set a response window.</strong> A flag that is answered in three weeks is often answered too late. Define how quickly outreach should happen and make that visible.</li>
-    </ol>
-    <p>The point of naming owners and next steps is not to mechanize care. It is to guarantee that a student who is starting to slip actually hears from someone, and hears from them in time.</p>
-
-    <h2>The intervention layer: what happens after outreach</h2>
-    <p>Match the intervention to the real cause, because a flag tells you a student is struggling, not why. The signals that fire are academic, but the reasons underneath them frequently are not. A student missing class may be picking up extra shifts to cover rent. A failed midterm may follow a family emergency no one on campus knows about. Outreach that only addresses the grade misses the thing that produced it.</p>
-    <p>The responses with the strongest track record are relational and practical, and the intervention layer is where they get built. A warm handoff walks a student from one office to the next through a named person rather than a referral slip, so no one falls through the gap between departments. Basic-needs support, covering food, transportation, and emergency aid, addresses the financial shocks that end more enrollments than failing grades do. A sustained mentoring relationship, one consistent person who notices and follows up, is often the difference between a student who leaves quietly and one who asks for help. None of this is soft. It is the infrastructure that makes an early warning worth issuing. For the wider menu of strategies this layer draws on, see our guide to <a href="../student-retention-strategies-that-work/">student retention strategies that work</a>.</p>
-
-    <h2>How do you close the loop and keep the system equitable?</h2>
-    <p>Close the loop by tracking whether the outreach happened, whether it worked, and for whom, then feed that back into the design. An early-warning system is only as good as the follow-through it triggers, so record the response to every flag: was contact made, what was offered, did the student re-engage, did they persist to the next term. Without that record you cannot tell a system that helps from one that merely alarms, and you cannot adjust thresholds that are firing too often or too late.</p>
-    <p>Equity has to be built into that loop, not bolted on afterward. Disaggregate outcomes by student population, because a system that appears to work on average can still be failing the students furthest from opportunity, and an aggregate response rate averages that gap away. Interrogate the flags themselves for bias: an indicator that leans on a proxy can encode circumstance rather than risk, so ask what each signal actually measures and whom it tends to flag before you trust it. This is the practical discipline of <a href="../what-is-critical-analytics/">critical analytics</a>: examining what a metric hides before acting on what it shows. A flag should open a door for a student, never quietly close one.</p>
-
-    <h2>Frequently asked questions</h2>
-    <p><strong>What is an early-warning system for student retention?</strong> It is a process that watches a few leading indicators, triggers a defined response when a student crosses a threshold, routes each flag to a named owner with a next step, and tracks whether the outreach worked. The technology matters far less than the follow-through.</p>
-    <p><strong>Which indicators should an early-warning system track?</strong> A small set that moves before retention does: attendance and early-engagement patterns, first-term grades in gateway courses, and credit momentum. These transfer as a principle from research on the on-track indicator, which found early performance and attendance to be strong predictors (Allensworth and Easton 2005, 2007).</p>
-    <p><strong>How is an early-warning system different from surveillance?</strong> Surveillance monitors students; an early-warning system prompts the institution to act. A flag is not a verdict or a permanent label, it is a signal that someone should reach out while a situation is still recoverable.</p>
-    <p><strong>How do you keep an early-warning system from being biased?</strong> Disaggregate outcomes by student population so an encouraging average does not hide a gap, and interrogate each flag for what it actually measures and whom it tends to flag. A proxy indicator can encode circumstance rather than risk, so test it before you trust it.</p>
-
-    <h2>References</h2>
-    <div class="refs">
-      <p>Allensworth, Elaine M., and John Q. Easton. 2005. <em>The On-Track Indicator as a Predictor of High School Graduation.</em> Chicago: Consortium on Chicago School Research, University of Chicago.</p>
-      <p>Allensworth, Elaine M., and John Q. Easton. 2007. <em>What Matters for Staying On-Track and Graduating in Chicago Public Schools.</em> Chicago: Consortium on Chicago School Research, University of Chicago.</p>
-    </div>
-    <p><strong>Ready to build one?</strong> Sensemaking Lab helps education institutions design early-warning systems and measure retention in a way that points to action, not just alarm. <a href="../../contact/">Contact us</a> to start the conversation.</p>
-    <div class="tags">
-      <a href="../">early warning system</a><a href="../">student retention</a><a href="../">student success</a><a href="../">analytics</a><a href="../">higher education</a>
-    </div>
-  </article>
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-cols">
-        <div>
-          <h3>Sensemaking Lab</h3>
-        </div>
-        <div>
-          <h4>Quick links</h4>
-          <ul class="footer-links">
-          <li><a href="../../">Home</a></li>
-          <li><a href="../../about/">About</a></li>
-          <li><a href="../../services/">Services</a></li>
-          <li><a href="../../clients/">Clients</a></li>
-          <li><a href="../../team/">Team</a></li>
-          <li><a href="../../faq/">FAQ</a></li>
-          <li><a href="../../contact/">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contact info</h4>
-          <p>Email: <a href="mailto:hello@sensemakinglab.io">hello@sensemakinglab.io</a></p>
-        </div>
-      </div>
-      <div class="footer-bottom">Copyright&copy; 2025 Sensemaking Lab. All Rights Reserved.</div>
-    </div>
-  </footer>
-  <script src="../../assets/js/main.js"></script>
-</body>
-</html>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sensemaking Lab Blog</title>
+    <link>https://www.sensemakinglab.io/blog/</link>
+    <atom:link href="https://www.sensemakinglab.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Insights on program evaluation, data consulting, and Critical Analytics for education, healthcare, and nonprofit organizations.</description>
+    <language>en-us</language>
+    <item>
+      <title>Student Retention Strategies That Work</title>
+      <link>https://www.sensemakinglab.io/blog/student-retention-strategies-that-work</link>
+      <guid>https://www.sensemakinglab.io/blog/student-retention-strategies-that-work</guid>
+      <pubDate>Tue, 21 Jul 2026 15:00:00 GMT</pubDate>
+      <description>Student retention strategies that move persistence: leading indicators, early-warning systems, wraparound support, and honest measurement that shows the gap.</description>
+    </item>
+    <item>
+      <title>What Is Critical Analytics?</title>
+      <link>https://www.sensemakinglab.io/blog/what-is-critical-analytics</link>
+      <guid>https://www.sensemakinglab.io/blog/what-is-critical-analytics</guid>
+      <pubDate>Tue, 14 Jul 2026 15:00:00 GMT</pubDate>
+      <description>Critical analytics is data analysis that asks how a metric was built, what it measures, and who benefits, not just what the numbers say. Here is what that changes.</description>
+    </item>
+    <item>
+      <title>How to Choose a Program Evaluator</title>
+      <link>https://www.sensemakinglab.io/blog/how-to-choose-a-program-evaluator</link>
+      <guid>https://www.sensemakinglab.io/blog/how-to-choose-a-program-evaluator</guid>
+      <pubDate>Tue, 07 Jul 2026 15:00:00 GMT</pubDate>
+      <description>What a program evaluator does, how internal and external evaluation compare, the six questions to ask before you hire, and the green and red flags that separate a strong fit from an expensive disappointment.</description>
+    </item>
+  </channel>
+</rss>
