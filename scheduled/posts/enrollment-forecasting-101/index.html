@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enrollment Forecasting 101: A Practical Primer &mdash; Sensemaking Lab</title>
+  <meta name="description" content="Enrollment forecasting explained plainly: what it is, the main methods, the data you need, why to disaggregate, and the pitfalls that sink a projection.">
+  <link rel="canonical" href="https://www.sensemakinglab.io/blog/enrollment-forecasting-101">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <meta name="google-site-verification" content="GWVqHEuYBaIzS23-tDNE0pbTqPAwlWFUAoXQOhozv4g">
+  <link rel="icon" href="../../assets/images/favicon.ico">
+  <link rel="alternate" type="application/rss+xml" title="Sensemaking Lab Blog" href="../../feed.xml">
+  <meta property="og:site_name" content="Sensemaking Lab">
+  <meta property="og:title" content="Enrollment Forecasting 101: A Practical Primer &mdash; Sensemaking Lab">
+  <meta property="og:description" content="Enrollment forecasting explained plainly: what it is, the main methods, the data you need, why to disaggregate, and the pitfalls that sink a projection.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.sensemakinglab.io/blog/enrollment-forecasting-101">
+  <meta property="og:image" content="https://www.sensemakinglab.io/assets/images/blog-post4.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Enrollment Forecasting 101: A Practical Primer &mdash; Sensemaking Lab">
+  <meta name="twitter:description" content="Enrollment forecasting explained plainly: what it is, the main methods, the data you need, why to disaggregate, and the pitfalls that sink a projection.">
+  <script type="application/ld+json">{"@context": "http://schema.org", "@type": "WebSite", "url": "https://www.sensemakinglab.io", "name": "Sensemaking Lab", "image": "https://www.sensemakinglab.io/assets/images/logo.jpg"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Sensemaking Lab", "url": "https://www.sensemakinglab.io", "logo": "https://www.sensemakinglab.io/assets/images/logo.jpg", "image": "https://www.sensemakinglab.io/assets/images/logo.jpg", "description": "Sensemaking Lab helps mission-driven organizations in education, healthcare, and the nonprofit sector turn complex data into clear, actionable insight through program evaluation, problem-solving consulting, critical analytics, and education support for post-secondary institutions.", "email": "hello@sensemakinglab.io", "areaServed": {"@type": "Country", "name": "United States"}, "address": {"@type": "PostalAddress", "streetAddress": "8605 Santa Monica Blvd, PMB #190416", "addressLocality": "West Hollywood", "addressRegion": "CA", "postalCode": "90069", "addressCountry": "US"}, "knowsAbout": ["Program evaluation", "Institutional research", "Enrollment forecasting", "Student retention", "Accreditation reporting", "Survey research", "Mixed-methods research", "Data visualization"], "founder": [{"@type": "Person", "name": "Oscar J. Mayorga", "jobTitle": "Managing Partner", "alumniOf": {"@type": "CollegeOrUniversity", "name": "University of California, Los Angeles"}, "sameAs": "https://www.linkedin.com/in/oscar-j-mayorga/"}, {"@type": "Person", "name": "Paul Martinez", "jobTitle": "Managing Partner", "alumniOf": {"@type": "CollegeOrUniversity", "name": "University of California, Los Angeles"}, "sameAs": "https://www.linkedin.com/in/paul-martinez-36b0a997/"}], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Services", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Evaluation", "description": "Quantitative and qualitative program evaluation guided by American Evaluation Association standards to help organizations understand impact and inform decisions."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Problem-Solving Consulting", "description": "Strategic consulting that helps mission-driven organizations navigate operational and programmatic challenges using an asset-based framework."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Critical Analytics", "description": "Critically-informed data analysis with secure infrastructure (SFTP, Databricks, AWS S3) that turns complex datasets into actionable, equitable insight."}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Education Support", "description": "Analytics and strategic support for post-secondary institutions, including data submissions, enrollment forecasting, student retention strategies, accreditation assistance, and custom reporting."}}]}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Enrollment Forecasting 101", "datePublished": "2026-07-28", "image": "https://www.sensemakinglab.io/assets/images/blog-post4.png", "url": "https://www.sensemakinglab.io/blog/enrollment-forecasting-101", "author": {"@type": "Person", "name": "Oscar J. Mayorga"}, "publisher": {"@type": "Organization", "name": "Sensemaking Lab", "logo": {"@type": "ImageObject", "url": "https://www.sensemakinglab.io/assets/images/logo.jpg"}}, "mainEntityOfPage": "https://www.sensemakinglab.io/blog/enrollment-forecasting-101"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is enrollment forecasting?", "acceptedAnswer": {"@type": "Answer", "text": "It is the practice of estimating how many students will enroll in a future term so budget, staffing, and academic planning can prepare accordingly. It is a disciplined estimate built from historical and contextual data, not a target or a guarantee."}}, {"@type": "Question", "name": "Which enrollment forecasting method is best?", "acceptedAnswer": {"@type": "Answer", "text": "There is no single best method. Trend and time-series methods are quick and work when conditions are stable, cohort-survival methods capture how students move through the institution, and ratio methods estimate enrollment from the admissions funnel. Strong forecasting blends them and cross-checks one against another."}}, {"@type": "Question", "name": "Why should you disaggregate an enrollment forecast?", "acceptedAnswer": {"@type": "Answer", "text": "Because an accurate aggregate can hide which student populations are projected to grow and which are projected to fall off. Disaggregating by population, entry type, and program shows where enrollment is actually shifting so plans can respond before a decline becomes a crisis."}}, {"@type": "Question", "name": "How often should you update an enrollment forecast?", "acceptedAnswer": {"@type": "Answer", "text": "Regularly, and whenever a policy or context shift changes the assumptions the forecast rests on. Treating a forecast as a living estimate that is revisited as conditions move is far safer than locking in a single number and planning against it all year."}}]}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../../">
+        <img src="../../assets/images/logo.jpg" alt="Sensemaking Lab" width="1500" height="510">
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+      <nav class="site-nav">
+        <a href="../../">Home</a>
+        <a href="../../about/">About</a>
+        <a href="../../services/">Services</a>
+        <a href="../../blog/" class="active">Blog</a>
+        <a href="../../clients/">Clients</a>
+        <a href="../../team/">Team</a>
+        <a href="../../faq/">FAQ</a>
+        <a class="nav-btn" href="../../contact/">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+  <article id="main" class="post">
+    <h1>Enrollment Forecasting 101</h1>
+    <div class="post-meta"><a href="../">Education Support</a> &middot; Jul 28 &middot; Written by Oscar J Mayorga</div>
+
+    <p>A single enrollment number sets the budget, the hiring plan, and the course schedule for the year ahead. So a forecast that misses does not just embarrass a planning office. It strands students in oversubscribed sections, or it funds positions the tuition revenue never arrives to cover. When the projection is wrong, the people who feel it first are the ones already stretched thinnest.</p>
+    <p>Enrollment forecasting is how an institution turns uncertainty about next fall into a plan it can staff and fund. This primer explains what forecasting is and why it matters, walks through the main methods in plain terms, names the data you need, makes the case for disaggregating the forecast, and flags the pitfalls that sink otherwise careful projections.</p>
+
+    <h2>What is enrollment forecasting, and why does it matter?</h2>
+    <p>Enrollment forecasting is the practice of estimating how many students will enroll in a future term so the institution can plan around that number. It is not a promise and it is not a target. It is a disciplined estimate, built from history and context, that tells budget, staffing, and academic planning what to prepare for.</p>
+    <p>The stakes are operational and immediate. Tuition and enrollment-linked revenue anchor most institutional budgets, so a forecast that runs high invites overspending on positions and sections the revenue will not support. A forecast that runs low leaves advisors overloaded, gateway courses oversubscribed, and financial-aid packaging scrambling to catch up. The forecast is the hinge on which the whole operating plan turns, which is why it deserves more rigor than a spreadsheet extrapolated out of habit.</p>
+
+    <h2>What are the main forecasting methods?</h2>
+    <p>Most enrollment forecasts rest on one of three families of method, and the right choice depends on the question and the data at hand. None is exotic, and each has a clear logic worth understanding before you trust its output.</p>
+    <p><strong>Trend and time-series methods</strong> project the future from the shape of the past. They fit a line or a curve to several years of enrollment counts and extend it forward, sometimes adjusting for seasonality or a steady rate of growth or decline. They are quick and transparent, and they work best when conditions are stable. Their weakness is that they assume tomorrow will resemble yesterday, which is exactly the assumption a policy change or a demographic shift breaks.</p>
+    <p><strong>Cohort-survival methods</strong> follow groups of students forward year by year, applying the rate at which each cohort persists, or "survives," from one stage to the next. Instead of forecasting a single total, they model the pipeline: how many first-year students continue to the second year, how many transfer in, how many graduate or leave. This approach captures the internal dynamics that a trend line hides, and it is the workhorse of serious enrollment planning because it ties the forecast to the actual movement of students through the institution.</p>
+    <p><strong>Ratio methods</strong> estimate one quantity from its historical relationship to another. A yield rate, the share of admitted students who enroll, is the most familiar example: multiply expected admits by the historical yield and you have a headcount estimate. Ratio methods are useful for the admissions funnel and for translating applications into enrollments, but they depend entirely on the ratio holding steady, and yield in particular has grown less predictable as students apply to more institutions.</p>
+    <p>In practice, strong forecasting blends these methods and cross-checks one against another rather than trusting any single model.</p>
+
+    <h2>What data do you need to forecast well?</h2>
+    <p>A forecast is only as trustworthy as the data feeding it, so the inputs deserve as much scrutiny as the method. At minimum, useful forecasting draws on several years of clean historical enrollment counts, term-by-term persistence and completion rates, and admissions-funnel data from inquiry through application, admission, and yield.</p>
+    <p>Context data matters just as much as counts. Regional demographic trends shape the pool of potential students, financial-aid and pricing decisions move yield, and program launches or closures redraw demand. A forecast built on headcounts alone, with no view of the conditions that produce those headcounts, will keep projecting a past that policy has already changed. Before you model anything, it is worth asking how each dataset was assembled and what it leaves out, because a projection inherits every assumption buried in its inputs (Garcia and Mayorga 2018).</p>
+
+    <h2>Why must you disaggregate the forecast?</h2>
+    <p>A single institution-wide projection can be accurate in total and still hide exactly the information leaders need. An aggregate forecast reports where the headcount is heading. It says nothing about which student populations are projected to grow and which are quietly projected to fall off, and those movements can point in opposite directions while the total holds flat.</p>
+    <p>This is where the critical-analytics lens earns its keep. Numbers are not neutral readouts of reality; a statistic can carry deficit assumptions and obscure the structural pattern underneath it, and an aggregate that averages groups together is one of the most common ways that happens (Gillborn 2010). Disaggregating the forecast by student population, entry type, and program, with particular attention to the students furthest from opportunity, turns a reassuring total into an actionable map of where enrollment is actually shifting. Critical quantitative work in higher education exists precisely to interrogate these categories and keep equity central rather than incidental to the analysis (Stage 2007; Teranishi 2007). A forecast that projects steady overall enrollment while a specific population erodes is not stable. It is a warning the aggregate is hiding, and disaggregation is how you hear it. This is the same discipline we describe in <a href="../what-is-critical-analytics/">critical analytics</a>: interrogate what a number conceals before you plan on what it shows.</p>
+
+    <h2>What are the common pitfalls?</h2>
+    <p>The methods are rarely what break a forecast. The habits around them are. A handful of predictable mistakes account for most projections that go badly wrong.</p>
+    <ul>
+      <li><strong>Bad inputs.</strong> Inconsistent definitions, mislabeled cohorts, and gaps in the historical record quietly corrupt every method downstream. Clean, well-documented data is the precondition for everything else, and no model rescues a compromised input.</li>
+      <li><strong>Treating a forecast as destiny.</strong> A projection describes the most likely future under stated assumptions. It is not a prophecy and it is not a goal. When a forecast hardens into a fixed target, planners stop watching for the signals that the assumptions are failing.</li>
+      <li><strong>Ignoring policy and context shifts.</strong> A new tuition model, a changed financial-aid formula, a program launch, or a demographic turn can break a trend that held for a decade. A forecast that never revisits its assumptions will confidently project a world that no longer exists.</li>
+      <li><strong>Forecasting only the aggregate.</strong> As above, a healthy total can mask a population in decline. Skipping disaggregation is not a shortcut, it is a blind spot.</li>
+    </ul>
+    <p>The fix for all four is the same posture: hold the forecast loosely, revisit it as conditions move, and treat it as a living estimate rather than a settled fact.</p>
+
+    <h2>When should you bring in an external partner?</h2>
+    <p>Much of this work can and should live in-house, but certain moments call for outside method and independence. When the stakes are high, when the data are messy or scattered across systems, or when internal projections keep missing for reasons no one can quite explain, an external partner brings modeling discipline and a second set of assumptions to test against your own.</p>
+    <p>The value of an outside partner is not a proprietary black box. It is rigor, transparency, and a forecast built to be understood and used by the people who have to act on it, which is the core commitment of utilization-focused evaluation (Patton and Campbell-Patton 2022). A good partner works alongside your enrollment and planning staff, disaggregates by default, and hands back a model you can maintain rather than a dependency you have to keep renting. Sensemaking Lab builds enrollment forecasts this way, and the same principle carries into the retention work a forecast should inform, which we cover in <a href="../student-retention-strategies-that-work/">student retention strategies that work</a>.</p>
+
+    <h2>Frequently asked questions</h2>
+    <p><strong>What is enrollment forecasting?</strong> It is the practice of estimating how many students will enroll in a future term so budget, staffing, and academic planning can prepare accordingly. It is a disciplined estimate built from historical and contextual data, not a target or a guarantee.</p>
+    <p><strong>Which enrollment forecasting method is best?</strong> There is no single best method. Trend and time-series methods are quick and work when conditions are stable, cohort-survival methods capture how students move through the institution, and ratio methods estimate enrollment from the admissions funnel. Strong forecasting blends them and cross-checks one against another.</p>
+    <p><strong>Why should you disaggregate an enrollment forecast?</strong> Because an accurate aggregate can hide which student populations are projected to grow and which are projected to fall off. Disaggregating by population, entry type, and program shows where enrollment is actually shifting so plans can respond before a decline becomes a crisis.</p>
+    <p><strong>How often should you update an enrollment forecast?</strong> Regularly, and whenever a policy or context shift changes the assumptions the forecast rests on. Treating a forecast as a living estimate that is revisited as conditions move is far safer than locking in a single number and planning against it all year.</p>
+
+    <h2>References</h2>
+    <div class="refs">
+      <p>Garcia, Nichole M., and Oscar J. Mayorga. 2018. "The Threat of Unexamined Secondary Data: A Critical Race Transformative Convergent Mixed Methods." <em>Race Ethnicity and Education</em> 21(2):231&ndash;252. doi:10.1080/13613324.2017.1377415.</p>
+      <p>Gillborn, David. 2010. "The Colour of Numbers: Surveys, Statistics and Deficit-Thinking about Race and Class." <em>Journal of Education Policy</em> 25(2):253&ndash;276. doi:10.1080/02680930903460740.</p>
+      <p>Patton, Michael Quinn, and Charmagne E. Campbell-Patton. 2022. <em>Utilization-Focused Evaluation.</em> Los Angeles: SAGE.</p>
+      <p>Stage, Frances K. 2007. "Answering Critical Questions Using Quantitative Data." <em>New Directions for Institutional Research</em> 2007(133):5&ndash;16. doi:10.1002/ir.200.</p>
+      <p>Teranishi, Robert T. 2007. "Race, Ethnicity, and Higher Education Policy: The Use of Critical Quantitative Research." <em>New Directions for Institutional Research</em> 2007(133):37&ndash;49. doi:10.1002/ir.203.</p>
+    </div>
+    <p>If your enrollment numbers keep surprising you, or you want a forecast that shows which student populations are moving rather than just the total, <a href="../../contact/">contact Sensemaking Lab</a>. We build enrollment forecasts and retention systems that point to action.</p>
+    <div class="tags">
+      <a href="../">enrollment forecasting</a><a href="../">higher education</a><a href="../">enrollment management</a><a href="../">analytics</a><a href="../">planning</a>
+    </div>
+  </article>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-cols">
+        <div>
+          <h3>Sensemaking Lab</h3>
+        </div>
+        <div>
+          <h4>Quick links</h4>
+          <ul class="footer-links">
+          <li><a href="../../">Home</a></li>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../services/">Services</a></li>
+          <li><a href="../../clients/">Clients</a></li>
+          <li><a href="../../team/">Team</a></li>
+          <li><a href="../../faq/">FAQ</a></li>
+          <li><a href="../../contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact info</h4>
+          <p>Email: <a href="mailto:hello@sensemakinglab.io">hello@sensemakinglab.io</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">Copyright&copy; 2025 Sensemaking Lab. All Rights Reserved.</div>
+    </div>
+  </footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
