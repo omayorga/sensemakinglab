@@ -50,7 +50,7 @@
       "date": "2026-08-04",
       "image": "blog-post5.png",
       "excerpt": "Internal vs. external evaluator: the honest trade-offs on cost, independence, capacity, and credibility, plus when to choose each and the hybrid middle path.",
-      "published": false
+      "published": true
     },
     {
       "num": 6,
