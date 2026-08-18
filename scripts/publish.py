@@ -79,7 +79,7 @@ def insert_card(post):
 
 def insert_sitemap(post, site):
     xml = open(SITEMAP, encoding="utf-8").read()
-    loc = f"{site}/blog/{post['slug']}"
+    loc = f"{site}/blog/{post['slug']}/"
     if f"<loc>{loc}</loc>" in xml:
         return False
     entry = f"  <url><loc>{loc}</loc></url>\n"
@@ -107,7 +107,7 @@ def write_feed(manifest):
                        key=lambda p: p["date"], reverse=True)
     items = []
     for p in published:
-        url = f"{site}/blog/{p['slug']}"
+        url = f"{site}/blog/{p['slug']}/"
         items.append(f"""    <item>
       <title>{esc(p['title'])}</title>
       <link>{url}</link>
