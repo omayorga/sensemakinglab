@@ -1,0 +1,7 @@
+# Cloudflare Pages redirects for retired Squarespace URLs.
+# Only URLs that carried real traffic or inbound links are redirected.
+# Everything else (e.g. /cart, /*-old) is left to return 404, which is
+# the correct signal for a page that should be dropped from the index.
+
+/home         /        301
+/blog/tag/*   /blog/   301
