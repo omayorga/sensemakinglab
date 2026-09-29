@@ -1,0 +1,36 @@
+# Sensemaking Lab
+
+> Sensemaking Lab is a program evaluation and data consulting firm. We help organizations in education, healthcare, and the nonprofit sector turn complex data into clear findings they can act on.
+
+We offer four services. Evaluation covers quantitative and qualitative program evaluation. Problem-solving consulting helps organizations work through operational and program challenges. Critical analytics is data analysis that asks how a dataset was made, what it measures, and whom it serves. Education support covers enrollment forecasting, student retention, accreditation, and reporting for colleges and universities.
+
+The managing partners are Oscar J. Mayorga and Paul Martinez.
+
+## Main pages
+
+- [Home](https://www.sensemakinglab.io/): What the lab does and for whom.
+- [Services](https://www.sensemakinglab.io/services/): The four service areas.
+- [About](https://www.sensemakinglab.io/about/): Who we are and how we work.
+- [Team](https://www.sensemakinglab.io/team/): The people behind the work.
+- [Clients](https://www.sensemakinglab.io/clients/): Selected client work.
+- [FAQ](https://www.sensemakinglab.io/faq/): Common questions about working with the lab.
+- [Contact](https://www.sensemakinglab.io/contact/): How to reach the lab.
+
+## Blog
+
+- [How to Choose a Program Evaluator](https://www.sensemakinglab.io/blog/how-to-choose-a-program-evaluator/): How to choose a program evaluator: what they do, internal vs. external trade-offs, the questions to ask, and the green and red flags to watch for.
+- [What Is Critical Analytics?](https://www.sensemakinglab.io/blog/what-is-critical-analytics/): Critical analytics is data analysis that asks how a metric was built, what it measures, and who benefits, not just what the numbers say. Here is what that means.
+- [Student Retention Strategies That Work](https://www.sensemakinglab.io/blog/student-retention-strategies-that-work/): Student retention strategies that move persistence: leading indicators, early-warning systems, wraparound support, and honest measurement that shows the gap.
+- [Enrollment Forecasting 101](https://www.sensemakinglab.io/blog/enrollment-forecasting-101/): Enrollment forecasting explained plainly: what it is, the main methods, the data you need, why to disaggregate, and the pitfalls that sink a projection.
+- [Internal vs. External Evaluators: How to Decide](https://www.sensemakinglab.io/blog/internal-vs-external-evaluators/): Internal vs. external evaluator: the honest trade-offs on cost, independence, capacity, and credibility, plus when to choose each and the hybrid middle path.
+- [Outcomes vs. Outputs: Measuring Nonprofit Impact](https://www.sensemakinglab.io/blog/outcomes-vs-outputs/): Outcomes vs outputs: outputs count activity, outcomes measure change. Learn the logic-model chain, why funders confuse them, and how to measure impact honestly.
+- [What Institutional Research Actually Does](https://www.sensemakinglab.io/blog/institutional-research/): Institutional research is the campus function behind reporting, accreditation, and student-success analytics. Here is what IR actually does and why it matters.
+- [Building an Early-Warning System for Retention](https://www.sensemakinglab.io/blog/early-warning-system-retention/): How to build an early-warning system for student retention: choose leading indicators, set thresholds, route every flag to a named owner, and close the loop.
+- [Culturally Responsive Evaluation, Explained](https://www.sensemakinglab.io/blog/culturally-responsive-evaluation/): Culturally responsive evaluation treats context, culture, and stakeholder voice as central to validity, not decoration. Here is what that means and why it matters.
+- [How to Write the Evaluation Section of a Grant](https://www.sensemakinglab.io/blog/evaluation-section-grant-proposal/): How to write the evaluation section of a grant proposal: questions tied to a logic model, mixed methods, indicators, timeline, and a real plan to use findings.
+- [Qualitative vs. Quantitative: Which Method When](https://www.sensemakinglab.io/blog/qualitative-vs-quantitative/): Qualitative vs. quantitative research, made practical. What each method answers well, the limits of each, and how to choose the method that fits your decision.
+- [What a Program Evaluation Costs](https://www.sensemakinglab.io/blog/what-a-program-evaluation-costs/): What a program evaluation costs and why prices vary so widely. The real cost drivers, how to right-size the work, and how to compare quotes fairly.
+
+## Elsewhere
+
+- [Sensemaking Lab on LinkedIn](https://www.linkedin.com/company/sense-making-lab)

@@ -5,3 +5,11 @@
 
 /home         /        301
 /blog/tag/*   /blog/   301
+
+# Retired Squarespace category and placeholder-post URLs still shown in search.
+/blog/category/*          /blog/   301
+/blog/blog-post-title-*   /blog/   301
+
+# Repair tracking links that lost their "?" when pasted into LinkedIn,
+# e.g. /blog/<slug>/utm_source=linkedin&utm_medium=social...
+/blog/:slug/utm_source=*  /blog/:slug/?utm_source=:splat  301

@@ -82,7 +82,7 @@ def insert_sitemap(post, site):
     loc = f"{site}/blog/{post['slug']}/"
     if f"<loc>{loc}</loc>" in xml:
         return False
-    entry = f"  <url><loc>{loc}</loc></url>\n"
+    entry = f"  <url><loc>{loc}</loc><lastmod>{post['date']}</lastmod></url>\n"
     lines = xml.splitlines(keepends=True)
     last_blog = max(i for i, ln in enumerate(lines)
                     if "/blog" in ln and "<loc>" in ln)
