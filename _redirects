@@ -13,3 +13,29 @@
 # Repair tracking links that lost their "?" when pasted into LinkedIn,
 # e.g. /blog/<slug>/utm_source=linkedin&utm_medium=social...
 /blog/:slug/utm_source=*  /blog/:slug/?utm_source=:splat  301
+
+# Post links shared without the /blog/ prefix (seen in Web Analytics, October 2026).
+/culturally-responsive-evaluation   /blog/culturally-responsive-evaluation/   301
+/culturally-responsive-evaluation/  /blog/culturally-responsive-evaluation/   301
+/early-warning-system-retention   /blog/early-warning-system-retention/   301
+/early-warning-system-retention/  /blog/early-warning-system-retention/   301
+/enrollment-forecasting-101   /blog/enrollment-forecasting-101/   301
+/enrollment-forecasting-101/  /blog/enrollment-forecasting-101/   301
+/evaluation-section-grant-proposal   /blog/evaluation-section-grant-proposal/   301
+/evaluation-section-grant-proposal/  /blog/evaluation-section-grant-proposal/   301
+/how-to-choose-a-program-evaluator   /blog/how-to-choose-a-program-evaluator/   301
+/how-to-choose-a-program-evaluator/  /blog/how-to-choose-a-program-evaluator/   301
+/institutional-research   /blog/institutional-research/   301
+/institutional-research/  /blog/institutional-research/   301
+/internal-vs-external-evaluators   /blog/internal-vs-external-evaluators/   301
+/internal-vs-external-evaluators/  /blog/internal-vs-external-evaluators/   301
+/outcomes-vs-outputs   /blog/outcomes-vs-outputs/   301
+/outcomes-vs-outputs/  /blog/outcomes-vs-outputs/   301
+/qualitative-vs-quantitative   /blog/qualitative-vs-quantitative/   301
+/qualitative-vs-quantitative/  /blog/qualitative-vs-quantitative/   301
+/student-retention-strategies-that-work   /blog/student-retention-strategies-that-work/   301
+/student-retention-strategies-that-work/  /blog/student-retention-strategies-that-work/   301
+/what-a-program-evaluation-costs   /blog/what-a-program-evaluation-costs/   301
+/what-a-program-evaluation-costs/  /blog/what-a-program-evaluation-costs/   301
+/what-is-critical-analytics   /blog/what-is-critical-analytics/   301
+/what-is-critical-analytics/  /blog/what-is-critical-analytics/   301
