@@ -18,3 +18,21 @@ Each page lives in its own folder so URLs match the original site (`/about`, `/s
 - The original site used Adobe Fonts (bc-novatica-cyr, omnes-pro) licensed through Squarespace. This rebuild substitutes the closest free Google Fonts: Poppins for headings and Quicksand for body text.
 - The Squarespace cart and account pages were intentionally not migrated.
 - The contact page, like the original, lists the email address; there is no form backend.
+
+## Search, listings, and email status
+
+Update this section whenever search, listing, or email settings change.
+
+**2026-10-22 to 2026-10-24**
+
+- Internal files (`README.md`, `README_BLOG_AUTOMATION.md`, `asset-manifest.txt`, `scripts/`, `scheduled/`, `docs/`) are redirected to the home page in `_redirects` so they are not served publicly. Add any new internal file or folder there.
+- Page titles are 60 characters or fewer and end in ` | Sensemaking Lab`. Meta descriptions are 155 characters or fewer, and `og:description`, `twitter:description`, and the JSON-LD description carry the same text. New blog posts follow the same limits.
+- Photos were converted to resized JPEGs (1920 px wide at most); site images fell from about 18 MB to 5.4 MB. Save new photos as JPEG, not PNG, and resize before committing.
+- The sitemap is in Google Search Console and Bing Webmaster Tools. Bing's copy was resubmitted on 2026-10-22, when it held 20 URLs.
+- Google Business Profile created on 2026-10-22 under oscar@sensemakinglab.io: category Consultant, service area Los Angeles County, website only (no public phone), address hidden. Waiting on Oscar to verify it.
+- DMARC is at quarantine, with reports going to Oscar's personal Gmail. Reports from Google and Microsoft through 2026-10-22 show every message passing.
+
+**Open items**
+
+- Verify the Google Business Profile, then add categories (Educational consultant, Market researcher), a description, and a logo.
+- Once the Business Profile and a LinkedIn company page are live, add their URLs to the organization JSON-LD as `sameAs`.

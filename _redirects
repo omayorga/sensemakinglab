@@ -1,3 +1,11 @@
+# Internal files stay in the repository but are not served publicly.
+/README.md                 /  301
+/README_BLOG_AUTOMATION.md  /  301
+/asset-manifest.txt        /  301
+/scripts/*                 /  301
+/scheduled/*               /  301
+/docs/*                    /  301
+
 # Cloudflare Pages redirects for retired Squarespace URLs.
 # Only URLs that carried real traffic or inbound links are redirected.
 # Everything else (e.g. /cart, /*-old) is left to return 404, which is
